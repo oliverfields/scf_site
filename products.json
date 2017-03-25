@@ -1,0 +1,340 @@
+{
+	"microgreens": {
+		"pagegen_directory_name": "010_Microgreens",
+		"url_part": "microgreens",
+		"title": "Microgreens",
+		"description": "Microgreens are lovely",
+		"items": {
+			"anis": {
+				"name": "Anis",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"basilikumkanel": {
+				"name": "Basilikum - Kanel",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"basilikumrosie": {
+				"name": "Basilikum - Rosie",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"basilikumsitron": {
+				"name": "Basilikum - Sitron",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"basilikumthai": {
+				"name": "Basilikum - Thai",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"bladbete": {
+				"name": "Bladbete",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"brokkoli": {
+				"name": "Brokkoli",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"ertespirer": {
+				"name": "Ertespirer",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"fennikel": {
+				"name": "Fennikel",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"gronnkalredrussian": {
+				"name": "Grønnkål - Red Russian",
+				"short_description": "Textured leaves with purple stems. Mild spiciness.",
+				"description": "Dark-green serrated leaves outlined in light-purple.",
+				"latin_name": "Brassica napus pabularia ",
+				"english_name": "Kale - Red Russian",
+				"flat_price": 10,
+				"days_to_maturity": 10,
+				"days_lead_time": 14
+			},
+			"kalrod": {
+				"name": "Kål rød",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"karse": {
+				"name": "Karse",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"kinagresslok": {
+				"name": "Kinagressløk",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"kjorvil": {
+				"name": "Kjørvil",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"knutekalrod": {
+				"name": "Knutekål rød",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"komatsuna": {
+				"name": "Komatsuna",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"koriander": {
+				"name": "Koriander",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"lok": {
+				"name": "Løk",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"lopstikke": {
+				"name": "Løpstikke",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"maisspirer": {
+				"name": "Maisspirer",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"mizuna": {
+				"name": "Mizuna",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"pakchoigreen": {
+				"name": "Pak Choi - Green",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"pakchoired": {
+				"name": "Pak Choi - Red",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"persille": {
+				"name": "Persille",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"reddikdaikon": {
+				"name": "Reddik - Daikon",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"reddiksango": {
+				"name": "Reddik - Sango",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"ruccula": {
+				"name": "Ruccula",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"sarsommer": {
+				"name": "Sar - Sommer",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"sennephvit": {
+				"name": "Sennep - Hvit",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"senneprod": {
+				"name": "Sennep - Rød",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"solsikke": {
+				"name": "Solsikke",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"syre": {
+				"name": "Syre",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"tatsoi": {
+				"name": "Tatsoi",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			}
+		}
+	}
+}
