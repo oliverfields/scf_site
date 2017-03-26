@@ -5,11 +5,11 @@
 		"title": "Microgreens",
 		"description": "Våre microgreens leveres idet de første ekte bladene springer ut, dette tar normalt en til to uker, men noen varianter kan ta opp til tre uker. Når microgreenene leveres er både smak og farge på topp. Vi dyrker året rundt og tilbyr friske, smakfulle microgreens. Det er kort reise fra oss til våre lokale kunder og dermed vil holdbarheten være bedre enn for planter som har måttet importeres over lengre distanser.",
 		"items": {
-			"anis": {
-				"name": "Anis",
+			"anise": {
+				"name": "Anise",
 				"showcase": true,
-				"short_description": "Gotta get some, it is so tasty",
-				"description": "",
+				"short_description": "Mild og søt, men også pikant smak av lakris.",
+				"description": "Krisp og delikat med tynne og klar grønne blader. Gir en mild anise liknende smak som er tydelig merkbar. Rik på anti-oxidant vitaminer som vitamin C og A.",
 				"latin_name": "",
 				"english_name": "",
 				"flat_price": 0,
@@ -18,8 +18,8 @@
 			},
 			"basilikumkanel": {
 				"name": "Basilikum - Kanel",
-				"short_description": "",
-				"description": "",
+				"short_description": "Møre blader, nett utsende og full og klar smak med et hint av kanel.",
+				"description": "Kanel basilikum er en noe obskur variant av basilikum som blander smaken av vanlig Italiensk basilikum (søt basilikum) med en hint av kanel. Kanel smaken stammer fra naturlig innhold av cinnamate, som også gir kanel sin unike smak.",
 				"latin_name": "",
 				"english_name": "",
 				"flat_price": 0,

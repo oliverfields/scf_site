@@ -204,14 +204,14 @@ def cropped_images(handle):
 			# If target not exist -> resize
 			if isfile(i['cropped_path']) == False:
 				resize = True
+			else:
+				# If source newer than target -> resize
+				if getmtime(source_image_path) > getmtime(i['cropped_path']):
+					resize = True
 
-			# If source newer than target -> resize
-			if getmtime(source_image_path) > getmtime(i['cropped_path']):
-				resize = True
-
-			# If size mismatch -> resize
-			if image_size_match(i['cropped_path'], i['width-height']) == False:
-				resize = True
+				# If size mismatch -> resize
+				if image_size_match(i['cropped_path'], i['width-height']) == False:
+					resize = True
 
 			if resize:
 				print "Resizing %s" % i['cropped_path']

@@ -4,13 +4,30 @@
 	<head>
 		<meta charset="utf-8" />
 		<base href="{{base_url}}" />
-		<title>South Coast Farms</title>
+		<title>{{title}} - South Coast Farms</title>
 		<meta name="description" content="{{description}}"/>
 		<base href="{{base_url}}" />
 		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<!--[if lte IE 8]><script src="{{base_url}}/include/js/ie/html5shiv.js"></script><![endif]-->
 		<link rel="stylesheet" href="{{base_url}}/include/css/main.css" />
 		<!--[if lte IE 8]><link rel="stylesheet" href="{{base_url}}/include/css/ie8.css" /><![endif]-->
+		<link rel="apple-touch-icon" sizes="57x57" href="{{base_url}}/include/icons/apple-icon-57x57.png">
+		<link rel="apple-touch-icon" sizes="60x60" href="{{base_url}}/include/icons/apple-icon-60x60.png">
+		<link rel="apple-touch-icon" sizes="72x72" href="{{base_url}}/include/icons/apple-icon-72x72.png">
+		<link rel="apple-touch-icon" sizes="76x76" href="{{base_url}}/include/icons/apple-icon-76x76.png">
+		<link rel="apple-touch-icon" sizes="114x114" href="{{base_url}}/include/icons/apple-icon-114x114.png">
+		<link rel="apple-touch-icon" sizes="120x120" href="{{base_url}}/include/icons/apple-icon-120x120.png">
+		<link rel="apple-touch-icon" sizes="144x144" href="{{base_url}}/include/icons/apple-icon-144x144.png">
+		<link rel="apple-touch-icon" sizes="152x152" href="{{base_url}}/include/icons/apple-icon-152x152.png">
+		<link rel="apple-touch-icon" sizes="180x180" href="{{base_url}}/include/icons/apple-icon-180x180.png">
+		<link rel="icon" type="image/png" sizes="192x192"  href="{{base_url}}/include/icons/android-icon-192x192.png">
+		<link rel="icon" type="image/png" sizes="32x32" href="{{base_url}}/include/icons/favicon-32x32.png">
+		<link rel="icon" type="image/png" sizes="96x96" href="{{base_url}}/include/icons/favicon-96x96.png">
+		<link rel="icon" type="image/png" sizes="16x16" href="{{base_url}}/include/icons/favicon-16x16.png">
+		<link rel="manifest" href="{{base_url}}/include/icons/manifest.json">
+		<meta name="msapplication-TileColor" content="#ffffff">
+		<meta name="msapplication-TileImage" content="{{base_url}}/include/icons/ms-icon-144x144.png">
+		<meta name="theme-color" content="#ffffff">
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -66,8 +83,6 @@
 
 {{content}}
 
-
-
 			<!-- Footer -->
 				<div id="footer-wrapper">
 					<section id="footer" class="container">
@@ -90,22 +105,35 @@
 							<div class="4u 12u(mobile)">
 								<section>
 									<header>
-										<h2>Ipsum et phasellus</h2>
+										<h2>Kontakt</h2>
 									</header>
-									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+									<ul class="contact">
+										<li>
+											<h3>Epost</h3>
+											<p><a href="mailto:post@southcoastfarms.no">post@southcoastfarms.no</a></p>
+										</li>
+										<li>
+											<h3>Telefon</h3>
+											<p>(+47) 472 24 390</p>
+										</li>
+										<li>
+											<h3>Adresse</h3>
+											<p>
+												Trommestadveien 145<br />
+												4817 His
+											</p>
+										</li>
+										<li>
+											<h3>Organisasjon</h3>
+											<p>South Coast Farms AS, 917 425 051</p>
+										</li>
 									</ul>
 								</section>
 							</div>
 							<div class="4u 12u(mobile)">
 								<section>
 									<header>
-										<h2>Vitae tempor lorem</h2>
+										<h2>Sosialt</h2>
 									</header>
 									<ul class="social">
 										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
@@ -113,24 +141,6 @@
 										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
 										<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
 										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
-									</ul>
-									<ul class="contact">
-										<li>
-											<h3>Address</h3>
-											<p>
-												Untitled Incorporated<br />
-												1234 Somewhere Road Suite<br />
-												Nashville, TN 00000-0000
-											</p>
-										</li>
-										<li>
-											<h3>Mail</h3>
-											<p><a href="#">someone@untitled.tld</a></p>
-										</li>
-										<li>
-											<h3>Phone</h3>
-											<p>(800) 000-0000</p>
-										</li>
 									</ul>
 								</section>
 							</div>
