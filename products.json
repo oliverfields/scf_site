@@ -3,11 +3,12 @@
 		"pagegen_directory_name": "010_Microgreens",
 		"url_part": "microgreens",
 		"title": "Microgreens",
-		"description": "Microgreens are lovely",
+		"description": "Våre microgreens leveres idet de første ekte bladene springer ut, dette tar normalt en til to uker, men noen varianter kan ta opp til tre uker. Når microgreenene leveres er både smak og farge på topp. Vi dyrker året rundt og tilbyr friske, smakfulle microgreens. Det er kort reise fra oss til våre lokale kunder og dermed vil holdbarheten være bedre enn for planter som har måttet importeres over lengre distanser.",
 		"items": {
 			"anis": {
 				"name": "Anis",
-				"short_description": "",
+				"showcase": true,
+				"short_description": "Gotta get some, it is so tasty",
 				"description": "",
 				"latin_name": "",
 				"english_name": "",
@@ -27,8 +28,9 @@
 			},
 			"basilikumrosie": {
 				"name": "Basilikum - Rosie",
-				"short_description": "",
-				"description": "",
+				"showcase": true,
+				"short_description": "Mørkegrønne blader og baslikum duft med en konsentrert søt smak.",
+				"description": "Perfekt for caprese salat med friske tomater og mozzarella og i supper. Rik på (E)-beta-caryophyllene (BCP), som er godt for tarmene og gikt. Inneholder også mye vitamin A, K og C.",
 				"latin_name": "",
 				"english_name": "",
 				"flat_price": 0,
@@ -97,6 +99,7 @@
 			},
 			"gronnkalredrussian": {
 				"name": "Grønnkål - Red Russian",
+				"showcase": true,
 				"short_description": "Textured leaves with purple stems. Mild spiciness.",
 				"description": "Dark-green serrated leaves outlined in light-purple.",
 				"latin_name": "Brassica napus pabularia ",

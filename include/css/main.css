@@ -1291,6 +1291,11 @@
 			width: auto;
 		}
 
+		.box .price {
+			font-weight: bold;
+			color: #5FC963;
+		}
+
 /* Button */
 
 	input[type="button"],
@@ -1304,7 +1309,7 @@
 		cursor: pointer;
 		border: 0;
 		border-radius: 5px;
-		background: #d52349;
+		background: #5FC963;
 		color: #fff !important;
 		font-weight: 700;
 		outline: 0;
@@ -1319,7 +1324,7 @@
 		input[type="reset"]:hover,
 		button:hover,
 		.button:hover {
-			background: #e53359;
+			background: #288A3D;
 		}
 
 		input[type="button"]:active,
@@ -1802,9 +1807,22 @@
 
 		/* Box */
 
+			.box .price, .box h3, .box .leadtime {
+				text-align: center;
+			}
+
 			.box {
 				padding: 2.75em 1.75em 2.75em 1.75em;
 			}
+
+				.box p.description {
+					line-height: 1.4em;
+					height: 11.2em; /* 8 lines x line height */
+				}
+
+				.box .leadtime {
+					color: #999;
+				}
 
 				.box .image.featured {
 					left: 1.75em;
@@ -1828,6 +1846,12 @@
 				}
 
 		/* Button */
+
+			.centered {
+				display: block;
+				text-align: center;
+				width: 100%;
+			}
 
 			input[type="button"],
 			input[type="submit"],
@@ -1923,7 +1947,6 @@
 
 				#nav > ul > li {
 					display: inline-block;
-					font-style: italic;
 					margin: 0 0.35em 0 0.35em;
 				}
 
@@ -1932,6 +1955,7 @@
 					}
 
 					#nav > ul > li > a {
+						font-size: 120%;
 						border-radius: 5px;
 						color: #5d5d5d;
 						text-decoration: none;

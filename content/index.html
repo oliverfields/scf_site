@@ -1,38 +1,81 @@
-Menu exclude: true
+#!/usr/bin/env python
+# -*- coding: utf-8 -*-
+
+from os.path import join
+from os import environ
+import json
+import codecs
+
+
+def showcase_products(product_category):
+	# Make popular plants boxes
+
+	html = ''
+
+	for handle, item in sorted(product_category['items'].iteritems(), key=lambda (k,v): (v,k)):
+
+		if 'showcase' in item and item['showcase']:
+
+			img_src = '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_BASE_URL'], handle)
+			link = '%s/%s/%s.html' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], handle)
+
+			html += '''											<div class="4u 12u(mobile)">
+												<section class="box">
+													<a href="%s" class="image featured"><img src="%s" alt="%s" /></a>
+													<header>
+														<h3>%s</h3>
+													</header>
+													<p class="description">%s<br /><br />%s</p>
+												</section>
+											</div>''' % (link, img_src, item['name'], item['name'], item['short_description'], item['description'])
+
+	return html.encode('utf-8')
+
+
+# Load products
+products_file_path = join(environ['PAGEGEN_SITE_DIR'], 'products.json')
+with codecs.open(products_file_path, 'r', encoding='utf-8') as products:
+	p = json.load(products)
+
+for key, product_category in p.iteritems():
+	showcase_html = showcase_products(product_category)
+
+
+
+page = '''Menu exclude: true
+Template: homepage.tpl'''
+
+product_category_url = '%s/%s/index.html' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'])
+#print(product_category_url)
+
+page += '''
 
 .. raw:: html
 
-  						<!-- Banner -->
-  							<section id="banner">
-  
-  							</section>
-  
-  						<!-- Intro -->
-  							<section id="intro" class="container">
-  								<div class="row">
-  									<div class="4u 12u(mobile)">
-  										<section class="first">
-  											<header>
-  												<h2>Smak</h2>
-  											</header>
-  											<p>Idet frøet spirer inneholder planten konsentrerte næringstoffer</p>
-  										</section>
-  									</div>
-  									<div class="4u 12u(mobile)">
-  										<section class="middle">
-  											<header>
-  												<h2>Farge</h2>
-  											</header>
-  											<p>Planter har alle mulige farger og teksturer</p>
-  										</section>
-  									</div>
-  									<div class="4u 12u(mobile)">
-  										<section class="last">
-  											<header>
-  												<h2>Kort reist</h2>
-  											</header>
-  											<p>Lokal produksjon på Sørlandet, vi leverer til Vest Agder, Aust Agder, Telemark og Vestfold</p>
-  										</section>
-  									</div>
-  								</div>
-  							</section>
+			<!-- Main -->
+				<div id="main-wrapper">
+					<div class="container">
+						<div class="row">
+							<div class="12u">
+
+								<!-- Showcase -->
+									<section>
+										<header class="major">
+											<h2>Populære microgreens</h2>
+										</header>
+										<div class="row">%s</div>
+										<footer>
+											<ul class="actions">
+												<li class="centered"><a href="%s" class="button big">Hele produkt utvalget</a></li>
+											</ul>
+										</footer>
+									</section>
+							</div>
+						</div>
+
+					</div>
+				</div>
+
+''' % (showcase_html, product_category_url.encode('utf-8'))
+
+print(page)

@@ -4,12 +4,14 @@
 
 import json
 from os import environ, makedirs, listdir
-from os.path import join, isdir, basename, splitext, isfile
+from os.path import join, isdir, basename, splitext, isfile, getmtime
 import codecs
 from shutil import rmtree
 import Image
+from operator import itemgetter
 
-featured_image_dimensions = (100,200)
+
+featured_image_dimensions = (400,200)
 thumbnail_image_dimensions = (50,100)
 
 
@@ -64,14 +66,48 @@ def create_pagegen_default_page(product_category):
 
 ''' % (product_category['title'], product_category['description'])
 
-	rst += '.. raw:: html\n'
-
-	for handle, item in sorted(product_category['items'].iteritems(), key=lambda (k,v): (v,k)):
+	product_boxes = ''
+	for handle, item in sorted(product_category['items'].items(), key=itemgetter(0)):
 		page_url = '%s/%s/%s' % (environ['PAGEGEN_BASE_URL'],  product_category['url_part'], '%s.html' % handle)
 
- 		rst += '\n  <div><a href="%s"><img src="%s/include/product-photos/%s_thumbnail.jpg" alt="%s" /><h4>%s</h4></a></div>' % (page_url, environ['PAGEGEN_BASE_URL'], handle, item['name'], item['name'])
+		img_src = '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_BASE_URL'], handle)
+		link = '%s/%s/%s.html' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], handle)
 
-	rst += '\n\n'
+		product_boxes += '''\n  											<div class="4u 12u(mobile)">
+												<section class="box">
+													<a href="%s" class="image featured"><img src="%s" alt="%s" /></a>
+													<header>
+														<h3>%s</h3>
+													</header>
+													<p class="description">%s<br /><br />%s</p>
+													<div class="price">%s NOK per brett</div>
+													<div class="leadtime">Leveringsklar %s virkedager</div>
+												</section>
+											</div>''' % (link, img_src, item['name'], item['name'], item['short_description'], item['description'], item['flat_price'], item['days_lead_time'])
+
+	rst += '''
+
+.. raw:: html
+
+  			<!-- Main -->
+  				<div id="main-wrapper">
+  					<div class="container">
+  						<div class="row">
+  							<div class="12u">
+  
+  								<!-- Products -->
+  									<section>
+  										<header class="major">
+  											<h2>Microgreens</h2>
+  										</header>
+  										<div class="row">%s</div>
+  									</section>
+  							</div>
+  						</div>
+  					</div>
+  				</div>
+  
+''' % product_boxes
 
 	write_file(default_page_path, rst)
 
@@ -128,6 +164,19 @@ def resize_and_crop(img_path, modified_path, size, crop_type='top'):
 	img.save(modified_path)
 
 
+def image_size_match(img_path, size):
+	try:
+		img = Image.open(img_path)
+	except Exception as e:
+		print('Unable to work out size for %s: %s' % (img_path, e))
+		return False
+
+	if img.size == size:
+		return True
+
+	return False
+
+
 def cropped_images(handle):
 	''' Make apprpriate versions of image '''
 
@@ -151,7 +200,21 @@ def cropped_images(handle):
 		]
 
 		for i in images:
-			if not isfile(i['cropped_path']):
+			resize = False
+			# If target not exist -> resize
+			if isfile(i['cropped_path']) == False:
+				resize = True
+
+			# If source newer than target -> resize
+			if getmtime(source_image_path) > getmtime(i['cropped_path']):
+				resize = True
+
+			# If size mismatch -> resize
+			if image_size_match(i['cropped_path'], i['width-height']) == False:
+				resize = True
+
+			if resize:
+				print "Resizing %s" % i['cropped_path']
 				resize_and_crop(source_image_path, i['cropped_path'], i['width-height'], crop_type='middle')
 	else:
 		print('WARNING: No image for %s' % source_image_path)

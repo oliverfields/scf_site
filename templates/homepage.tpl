@@ -24,14 +24,48 @@
 
 						<!-- Nav -->
 							<nav id="nav">{{menu}}</nav>
+
+  						<!-- Banner -->
+  							<section id="banner">
+  
+  							</section>
+
+  						<!-- Intro -->
+  							<section id="intro" class="container">
+  								<div class="row">
+  									<div class="4u 12u(mobile)">
+  										<section class="first">
+  											<header>
+  												<h2>Smak</h2>
+  											</header>
+  											<p>Idet frøet spirer inneholder planten konsentrerte næringstoffer</p>
+  										</section>
+  									</div>
+  									<div class="4u 12u(mobile)">
+  										<section class="middle">
+  											<header>
+  												<h2>Farge</h2>
+  											</header>
+  											<p>Planter har alle mulige farger og teksturer</p>
+  										</section>
+  									</div>
+  									<div class="4u 12u(mobile)">
+  										<section class="last">
+  											<header>
+  												<h2>Kort reist</h2>
+  											</header>
+  											<p>Lokal produksjon på Sørlandet, vi leverer til Vest Agder, Aust Agder, Telemark og Vestfold</p>
+  										</section>
+  									</div>
+  								</div>
+  							</section>
+						</div>
+
 					</div>
 				</div>
 
-				<div id="main-wrapper">
-					<div class="container">
 {{content}}
-					</div>
-				</div>
+
 
 
 			<!-- Footer -->
@@ -56,35 +90,22 @@
 							<div class="4u 12u(mobile)">
 								<section>
 									<header>
-										<h2>Kontakt</h2>
+										<h2>Ipsum et phasellus</h2>
 									</header>
-									<ul class="contact">
-										<li>
-											<h3>Epost</h3>
-											<p><a href="mailto:post@southcoastfarms.no">post@southcoastfarms.no</a></p>
-										</li>
-										<li>
-											<h3>Telefon</h3>
-											<p>(+47) 472 24 390</p>
-										</li>
-										<li>
-											<h3>Adresse</h3>
-											<p>
-												Trommestadveien 145<br />
-												4817 His
-											</p>
-										</li>
-										<li>
-											<h3>Organisasjon</h3>
-											<p>South Coast Farms AS, 917 425 051</p>
-										</li>
+									<ul class="divided">
+										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
+										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
+										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
+										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
+										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
+										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
 									</ul>
 								</section>
 							</div>
 							<div class="4u 12u(mobile)">
 								<section>
 									<header>
-										<h2>Sosialt</h2>
+										<h2>Vitae tempor lorem</h2>
 									</header>
 									<ul class="social">
 										<li><a class="icon fa-facebook" href="#"><span class="label">Facebook</span></a></li>
@@ -92,6 +113,24 @@
 										<li><a class="icon fa-dribbble" href="#"><span class="label">Dribbble</span></a></li>
 										<li><a class="icon fa-linkedin" href="#"><span class="label">LinkedIn</span></a></li>
 										<li><a class="icon fa-google-plus" href="#"><span class="label">Google+</span></a></li>
+									</ul>
+									<ul class="contact">
+										<li>
+											<h3>Address</h3>
+											<p>
+												Untitled Incorporated<br />
+												1234 Somewhere Road Suite<br />
+												Nashville, TN 00000-0000
+											</p>
+										</li>
+										<li>
+											<h3>Mail</h3>
+											<p><a href="#">someone@untitled.tld</a></p>
+										</li>
+										<li>
+											<h3>Phone</h3>
+											<p>(800) 000-0000</p>
+										</li>
 									</ul>
 								</section>
 							</div>
