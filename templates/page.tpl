@@ -1,5 +1,5 @@
 <!DOCTYPE HTML>
-<!-- Dopetrope by HTML5 UP -->
+<!-- Design Dopetrope by HTML5 UP -->
 <html>
 	<head>
 		<meta charset="utf-8" />
@@ -28,6 +28,9 @@
 		<meta name="msapplication-TileColor" content="#ffffff">
 		<meta name="msapplication-TileImage" content="{{base_url}}/include/icons/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
+		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+		<script src="{{base_url}}/include/js/simpleCart.js"></script>
+		<script src="{{base_url}}/include/js/simpleCart_SCF.js"></script>
 	</head>
 	<body class="homepage">
 		<div id="page-wrapper">
@@ -58,15 +61,12 @@
 							<div class="4u 12u(mobile)">
 								<section>
 									<header>
-										<h2>Tempus consequat</h2>
+										<h2>Snarveier</h2>
 									</header>
 									<ul class="divided">
-										<li><a href="#">Lorem ipsum dolor sit amet sit veroeros</a></li>
-										<li><a href="#">Sed et blandit consequat sed tlorem blandit</a></li>
-										<li><a href="#">Adipiscing feugiat phasellus sed tempus</a></li>
-										<li><a href="#">Hendrerit tortor vitae mattis tempor sapien</a></li>
-										<li><a href="#">Sem feugiat sapien id suscipit magna felis nec</a></li>
-										<li><a href="#">Elit class aptent taciti sociosqu ad litora</a></li>
+										<li><a href="{{base_url}}/microgreens">Produkter</a></li>
+										<li><a href="{{base_url}}/bestilling">Bestilling</a></li>
+										<li><a href="{{base_url}}/om-oss">Om South Coast Farms</a></li>
 									</ul>
 								</section>
 							</div>
@@ -119,7 +119,7 @@
 								<!-- Copyright -->
 									<div id="copyright">
 										<ul class="links">
-											<li>{{year}} &copy; South Coast Farms AS. All rights reserved.</li><li>Design: <a href="http://html5up.net">HTML5 UP</a></li>
+											<li>{{year}} &copy; South Coast Farms AS. All rights reserved.</li>
 										</ul>
 									</div>
 
