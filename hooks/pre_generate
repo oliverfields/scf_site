@@ -70,20 +70,24 @@ def create_pagegen_default_page(product_category):
 	for handle, item in sorted(product_category['items'].items(), key=itemgetter(0)):
 		page_url = '%s/%s/%s' % (environ['PAGEGEN_BASE_URL'],  product_category['url_part'], '%s.html' % handle)
 
-		img_src = '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_BASE_URL'], handle)
+		img_src = '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_SITE_DIR'], handle)
+		if isfile(img_src) == False:
+			print('Not found: %s' % img_src)
+			img_src = '%s/include/product-photos/photo-missing_featured.jpg' % (environ['PAGEGEN_BASE_URL'])
+
 		link = '%s/%s/%s.html' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], handle)
 
 		product_boxes += '''\n  											<div class="4u 12u(mobile)">
-												<section class="box">
+												<section class="simpleCart_shelfItem box">
 													<a href="%s" class="image featured"><img src="%s" alt="%s" /></a>
 													<header>
-														<h3>%s</h3>
+														<h3 class="item_name">%s</h3>
 													</header>
 													<p class="description">%s<br /><br />%s</p>
-													<div class="price">%s NOK per brett</div>
-													<div class="leadtime">Leveringsklar %s virkedager</div>
+													<div class="price"><span class="item_price">%s</span>kr per brett</div>
+													<input type="button" class="item_add button" value="Legg i handlekurv" />
 												</section>
-											</div>''' % (link, img_src, item['name'], item['name'], item['short_description'], item['description'], item['flat_price'], item['days_lead_time'])
+											</div>''' % (link, img_src, item['name'], item['name'], item['short_description'], item['description'], item['flat_price'])
 
 	rst += '''
 
@@ -251,6 +255,9 @@ with codecs.open(products_file_path, 'r', encoding='utf-8') as products:
 
 # Create product directories
 create_pagegen_directories(environ['PAGEGEN_SOURCE_DIR'], p)
+
+# Make default image
+cropped_images('photo-missing')
 
 # Create default page and pages for each product
 for key, product_category in p.iteritems():

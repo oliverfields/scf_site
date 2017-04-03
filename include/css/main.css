@@ -1,4 +1,3 @@
-@import url("/home/oliver/Documents/Personal/projects/pagegen/scf_site/site/test/include/css/font-awesome.min.css");
 @import url("https://fonts.googleapis.com/css?family=Source+Sans+Pro:300,400,700,900,300italic");
 
 /*
@@ -1131,12 +1130,11 @@
 	}
 
 	a {
-		color: #d52349;
 		text-decoration: underline;
 	}
 
 		a:hover {
-			text-decoration: none;
+			color: #d52349;
 		}
 
 	br.clear {
@@ -1292,6 +1290,7 @@
 		}
 
 		.box .price {
+			margin-top: 2.6em;
 			font-weight: bold;
 			color: #5FC963;
 		}
@@ -1523,7 +1522,6 @@
 				height: 3em;
 				text-align: center;
 				border-radius: 5px;
-				background: #888;
 				-moz-transition: background-color .25s ease-in-out;
 				-webkit-transition: background-color .25s ease-in-out;
 				-ms-transition: background-color .25s ease-in-out;
@@ -1603,7 +1601,6 @@
 		.icon:before {
 			-moz-osx-font-smoothing: grayscale;
 			-webkit-font-smoothing: antialiased;
-			font-family: FontAwesome;
 			font-style: normal;
 			font-weight: normal;
 			text-transform: none !important;
@@ -1732,6 +1729,7 @@
 
 		#footer-wrapper a {
 			color: #c5c4c4;
+			text-decoration: none;
 		}
 
 		#footer-wrapper h2, #footer-wrapper h3, #footer-wrapper h4, #footer-wrapper h5, #footer-wrapper h6, #footer-wrapper strong, #footer-wrapper b {
@@ -2363,7 +2361,6 @@
 				}
 
 					#titleBar .toggle:before {
-						font-family: FontAwesome;
 						text-decoration: none;
 						font-style: normal;
 						font-weight: normal;
@@ -2568,4 +2565,180 @@
 					padding: 0.75em 1.25em 0.75em 1.25em;
 				}
 
+	}
+
+	table.order_form a {
+		text-decoration: none;
+	}
+
+	table.order_form th, table.order_form td {
+		text-align: left;
+		vertical-align: top;
+		padding: .2em .4em;
+	}
+
+	table.order_form th {
+		font-weight: bold;
+	}
+
+	table.order_form table {
+		margin-bottom: 0;
+	}
+
+	table.order_form th.item-name {
+		width: 30%;
+		border-bottom: solid 1px #444;
+	}
+
+	table.order_form th.item-price {
+		width: 15%;
+		border-bottom: solid 1px #444;
+		text-align: center;
+	}
+
+	table.order_form th.item-decrement {
+		width: 2%;
+		border-bottom: solid 1px #444;
+	}
+
+	table.order_form th.item-quantity {
+		width: 15%;
+		text-align: center;
+		border-bottom: solid 1px #444;
+	}
+
+	table.order_form th.item-increment {
+		width: 2%;
+		border-bottom: solid 1px #444;
+	}
+
+	table.order_form th.item-total {
+		width: 26%;
+		text-align: right;
+		border-bottom: solid 1px #444;
+	}
+
+	table.order_form th.item-remove {
+		border-bottom: solid 1px #444;
+		width: 10%;
+	}
+
+	table.order_form td.item-name {
+		padding-left: 1em;
+	}
+
+	table.order_form td.item-price {
+		text-align: center;
+	}
+
+	table.order_form td.item-decrement {
+		text-align: right;
+	}
+
+	table.order_form td.item-quantity {
+		text-align: center;
+	}
+
+	table.order_form td.item-increment {
+		text-align: left;
+	}
+
+	table.order_form td.item-total {
+		text-align: right;
+	}
+
+	table.order_form td.item-remove {
+		text-align: right;
+	}
+
+	a.simpleCart_decrement, a.simpleCart_increment {
+		font-weight: bold;
+		color: blue;
+	}
+
+	a.simpleCart_remove {
+		color: #d52349;
+	}
+
+	table.order_form tr.sub_total {
+		border-top: solid 1px #444;
+		border-bottom: solid 1px #444;
+		margin: .4em 0;
+		font-weight: bold;
+	}
+
+	table.order_form tr.total {
+		border-top: solid 2px #222;
+		border-bottom: solid 2px #222;
+		font-weight: bold;
+	}
+
+	table.order_form tr.total th, table.order_form tr.total td {
+		padding: .8em 0;
+	}
+
+	table.order_form tr.sub_total th, table.order_form tr.tax th, table.order_form tr.shipping th, table.order_form tr.total th {
+		width: 64%;
+	}
+
+	table.order_form tr.sub_total td, table.order_form tr.tax td, table.order_form tr.shipping td, table.order_form tr.total td {
+		text-align: right;
+	}
+
+	div#order_details {
+		margin: 4em 0;
+	}
+
+	div#order_details label {
+		display: inline-block;
+		width: 10em;
+		margin: .4em 2em .6em 0;
+		font-weight: bold;
+	}
+
+	div#order_details input {
+		width: 30em;
+	}
+
+	div#terms_and_conditions {
+		margin-bottom: 1em;
+	}
+
+	div#checkout {
+		text-align: right;
+	}
+
+	.form_error{
+		display: none;
+		margin-left: 10px;
+	}
+
+	.form_error_show{
+		color: red;
+		margin-left: 10px;
+		font-weight: bold;
+	}
+
+	input.form_invalid, textarea.form_invalid{
+		border: 2px solid red;
+		background-color: #FFCCDD;
+	}
+
+	input.form_valid, textarea.form_valid{
+		border: 2px solid #288A3D;
+		background-color: #CCFFCC;
+	}
+
+	.shopping_cart_button:hover {
+		background-color: #288A3D ! important;
+	}
+
+	.box input.item_add {
+		display: block;
+		margin: 1em auto 0 auto;
+	}
+
+	ul.bullet-list {
+		list-style: circle;
+		margin-left: 2em;
 	}

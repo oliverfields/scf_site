@@ -1,0 +1,56 @@
+Menu exclude: True
+RSS include: False
+Search index exclude: True
+Sitemap exclude: True
+
+.. raw:: html
+
+  
+  <table class="order_form">
+  <tr>
+  <td colspan="2"><div class="simpleCart_items"></div></td>
+  </tr>
+  <tr class="sub_total padding_row">
+  <th>Sub total</th><td><div class="simpleCart_total"></div></td>
+  </tr>
+  <tr class="tax">
+  <th>MVA 25%</th><td><div class="simpleCart_tax"></div></td>
+  </tr>
+  <tr class="shipping">
+  <th><label for="ship_order">Frakt til Vest Agder, Aust Agder, Telemark eller Vestfold - 15kr/brett</label> <input type="checkbox" id="ship_order" name="ship_order" onchange="simpleCart.update(); toggle_address_mandatory();" /></th><td><div class="simpleCart_shipping"></div></td>
+  </tr>
+  <tr class="total padding_row">
+  <th>Total</th><td><div class="simpleCart_grandTotal"></div></td>
+  </tr>
+  <tr class="extra_info">
+  <td colspan="2"><p>* Et brett måler 52x30cm</p></td>
+  </tr>
+  </table>
+  
+  <div id="order_details">
+  <div><label for="delivery_date">Leveringsdato*</label><input type="text" name="delivery_date" id="delivery_date" class="mandatory" /><span class="form_error">Påkreved</span></div>
+  <div><label for="ordered_by_name">Navn*</label><input type="text" name="ordered_by_name" id="ordered_by_name" class="mandatory" /><span class="form_error">Påkreved</span></div>
+  <div><label for="customer_name">Firma*</label><input type="text" name="customer_name" id="customer_name" class="mandatory" /><span class="form_error">Påkreved</span></div>
+  <div><label for="customer_phone">Telefon*</label><input type="text" name="customer_phone" id="customer_phone" class="mandatory" /><span class="form_error">Påkreved</span></div>
+  <div><label for="customer_email">Epost*</label><input type="text" name="customer_email" id="customer_email" class="mandatory" /><span class="form_error">Påkreved</span></div>
+  <div><label id="customer_address_label" for="customer_address">Adresse</label><input type="text" name="customer_address" id="customer_address" /><span class="form_error">Påkreved</span></div>
+  </div>
+  <div id="checkout">
+  <div id="terms_and_conditions">Ved bestilling aksepterer jeg <a target="_blank" href="file:///home/oliver/Documents/Personal/projects/pagegen/scf_site/site/test/kjopsvilkar.html">kjøpsvilkår</a></div>
+  <a href="javascript:;" class="simpleCart_checkout button">Bestill</a>
+  </div>
+  
+  <script type="text/javascript">
+  $.datepicker.setDefaults(
+  $.extend(
+    $.datepicker.regional['nb']
+  )
+  );
+  $("#delivery_date").datepicker({
+    minDate: 0,
+    onSelect: function() {
+      is_empty($(this));
+    }
+  });
+  
+  </script>
