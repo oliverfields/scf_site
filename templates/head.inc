@@ -30,7 +30,6 @@
 		<meta name="msapplication-TileImage" content="{{base_url}}/include/icons/ms-icon-144x144.png">
 		<meta name="theme-color" content="#ffffff">
 		<script type = "text/javascript" src = "https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-		<script type="text/javascript" src="{{base_url}}/include/js/simpleCart.js"></script>
 		<script type="text/javascript" src="{{base_url}}/include/js/jquery-ui.js"></script>
 		<script type="text/javascript" src="{{base_url}}/include/js/jquery.ui.datepicker-nb.js"></script>
 	</head>

@@ -76,7 +76,6 @@
 			<script src="{{base_url}}/include/js/util.js"></script>
 			<!--[if lte IE 8]><script src="{{base_url}}/include/js/ie/respond.min.js"></script><![endif]-->
 			<script src="{{base_url}}/include/js/main.js"></script>
-			<script src="{{base_url}}/include/js/simpleCart_SCF.js"></script>
 
 	</body>
 </html>
