@@ -2,9 +2,11 @@ Title: Fennikel
 Menu exclude: True
 Description: 
 
-
-
 .. raw:: html
 
-  <img src="file:///home/oliver/Documents/Personal/projects/pagegen/scf_site/site/test/include/product-photos/fennikel_featured.jpg" alt="fennikel" />
+  <h1>Fennikel</h1>
+  
+  
+  
+  <img src="http://southcoastfarms.no/include/product-photos/fennikel_featured.jpg" alt="fennikel" />
 

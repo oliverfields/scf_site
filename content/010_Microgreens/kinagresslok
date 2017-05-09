@@ -2,9 +2,11 @@ Title: Kinagressløk
 Menu exclude: True
 Description: 
 
-
-
 .. raw:: html
 
-  <img src="file:///home/oliver/Documents/Personal/projects/pagegen/scf_site/site/test/include/product-photos/kinagresslok_featured.jpg" alt="kinagresslok" />
+  <h1>Kinagressløk</h1>
+  
+  
+  
+  <img src="http://southcoastfarms.no/include/product-photos/kinagresslok_featured.jpg" alt="kinagresslok" />
 

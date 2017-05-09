@@ -5,8 +5,8 @@
 		"title": "Microgreens",
 		"description": "Våre microgreens leveres idet de første ekte bladene springer ut, dette tar normalt en til to uker, men noen varianter kan ta opp til tre uker. Når microgreenene leveres er både smak og farge på topp. Vi dyrker året rundt og tilbyr friske, smakfulle microgreens. Det er kort reise fra oss til våre lokale kunder og dermed vil holdbarheten være bedre enn for planter som har måttet importeres over lengre distanser.",
 		"items": {
-			"anise": {
-				"name": "Anise",
+			"anis": {
+				"name": "Anis",
 				"in_stock": true,
 				"showcase": true,
 				"short_description": "Mild og søt, men også pikant smak av lakris.",
@@ -17,29 +17,8 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"basilikumkanel": {
-				"name": "Basilikum - Kanel",
-				"short_description": "Møre blader, nett utsende og full og klar smak med et hint av kanel.",
-				"description": "Kanel basilikum er en noe obskur variant av basilikum som blander smaken av vanlig Italiensk basilikum (søt basilikum) med en hint av kanel. Kanel smaken stammer fra naturlig innhold av cinnamate, som også gir kanel sin unike smak.",
-				"latin_name": "",
-				"english_name": "",
-				"flat_price": 0,
-				"days_to_maturity": 0,
-				"days_lead_time": 0
-			},
-			"basilikumrosie": {
-				"name": "Basilikum - Rosie",
-				"showcase": true,
-				"short_description": "Mørkegrønne blader og baslikum duft med en konsentrert søt smak.",
-				"description": "Perfekt for caprese salat med friske tomater og mozzarella og i supper. Rik på (E)-beta-caryophyllene (BCP), som er godt for tarmene og gikt. Inneholder også mye vitamin A, K og C.",
-				"latin_name": "",
-				"english_name": "",
-				"flat_price": 19,
-				"days_to_maturity": 0,
-				"days_lead_time": 0
-			},
-			"basilikumsitron": {
-				"name": "Basilikum - Sitron",
+			"borage": {
+				"name": "Borage",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -48,18 +27,18 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"basilikumthai": {
-				"name": "Basilikum - Thai",
+			"basilikumopal": {
+				"name": "Basilikum - Opal",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
 				"english_name": "",
-				"flat_price": 30,
+				"flat_price": 0,
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"bladbete": {
-				"name": "Bladbete",
+			"bete": {
+				"name": "Bete - Bulls Blood",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -78,8 +57,9 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"ertespirer": {
-				"name": "Ertespirer",
+			"ert": {
+				"name": "Ert",
+				"showcase": true,
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -90,28 +70,6 @@
 			},
 			"fennikel": {
 				"name": "Fennikel",
-				"short_description": "",
-				"description": "",
-				"latin_name": "",
-				"english_name": "",
-				"flat_price": 0,
-				"days_to_maturity": 0,
-				"days_lead_time": 0
-			},
-			"gronnkalredrussian": {
-				"name": "Grønnkål - Red Russian",
-				"in_stock": false,
-				"showcase": false,
-				"short_description": "Textured leaves with purple stems. Mild spiciness.",
-				"description": "Dark-green serrated leaves outlined in light-purple.",
-				"latin_name": "Brassica napus pabularia ",
-				"english_name": "Kale - Red Russian",
-				"flat_price": 10,
-				"days_to_maturity": 10,
-				"days_lead_time": 14
-			},
-			"kalrod": {
-				"name": "Kål rød",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -180,16 +138,6 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"lok": {
-				"name": "Løk",
-				"short_description": "",
-				"description": "",
-				"latin_name": "",
-				"english_name": "",
-				"flat_price": 0,
-				"days_to_maturity": 0,
-				"days_lead_time": 0
-			},
 			"lopstikke": {
 				"name": "Løpstikke",
 				"short_description": "",
@@ -200,38 +148,8 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"maisspirer": {
-				"name": "Maisspirer",
-				"short_description": "",
-				"description": "",
-				"latin_name": "",
-				"english_name": "",
-				"flat_price": 0,
-				"days_to_maturity": 0,
-				"days_lead_time": 0
-			},
 			"mizuna": {
 				"name": "Mizuna",
-				"short_description": "",
-				"description": "",
-				"latin_name": "",
-				"english_name": "",
-				"flat_price": 0,
-				"days_to_maturity": 0,
-				"days_lead_time": 0
-			},
-			"pakchoigreen": {
-				"name": "Pak Choi - Green",
-				"short_description": "",
-				"description": "",
-				"latin_name": "",
-				"english_name": "",
-				"flat_price": 0,
-				"days_to_maturity": 0,
-				"days_lead_time": 0
-			},
-			"pakchoired": {
-				"name": "Pak Choi - Red",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -260,8 +178,8 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"reddiksango": {
-				"name": "Reddik - Sango",
+			"reddikrambo": {
+				"name": "Reddik - Rambo",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -270,8 +188,8 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"ruccula": {
-				"name": "Ruccula",
+			"ruccola": {
+				"name": "Ruccola",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -290,8 +208,8 @@
 				"days_to_maturity": 0,
 				"days_lead_time": 0
 			},
-			"sennephvit": {
-				"name": "Sennep - Hvit",
+			"senneprod": {
+				"name": "Sennep - Rød",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -312,6 +230,7 @@
 			},
 			"solsikke": {
 				"name": "Solsikke",
+				"showcase": true,
 				"short_description": "",
 				"description": "",
 				"latin_name": "",
@@ -332,6 +251,26 @@
 			},
 			"tatsoi": {
 				"name": "Tatsoi",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"oregano": {
+				"name": "Oregano",
+				"short_description": "",
+				"description": "",
+				"latin_name": "",
+				"english_name": "",
+				"flat_price": 0,
+				"days_to_maturity": 0,
+				"days_lead_time": 0
+			},
+			"timian": {
+				"name": "Timian",
 				"short_description": "",
 				"description": "",
 				"latin_name": "",

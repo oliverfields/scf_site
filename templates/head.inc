@@ -41,7 +41,7 @@
 					<div id="header">
 
 						<!-- Logo -->
-							<h1><a href="{{base_url}}/index.html"><img src="{{base_url}}/include/images/south-coast-farms-logo.svg" width="500"  alt="South Coast Farms - Microgreens" onerror="this.src='{{base_url}}/include/images/south-coast-farms-logo.png'" /></a></h1>
+							<h1><a href="{{base_url}}/"><img src="{{base_url}}/include/images/south-coast-farms-logo.svg" width="500"  alt="South Coast Farms - Microgreens" onerror="this.src='{{base_url}}/include/images/south-coast-farms-logo.png'" /></a></h1>
 
 						<!-- Nav -->
 							<nav id="nav">{{menu}}</nav>

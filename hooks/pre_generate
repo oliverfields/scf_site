@@ -14,7 +14,6 @@ from operator import itemgetter
 featured_image_dimensions = (400,200)
 thumbnail_image_dimensions = (50,100)
 
-
 def figure(url, width, height, alt, link):
 
 	return '''
@@ -52,15 +51,28 @@ def create_pagegen_directories(source_dir, products):
 		makedirs(product_directory)
 
 
+def get_image_url(image_src, handle):
+		if isfile(image_src):
+			return '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_BASE_URL'], handle)
+
+		return '%s/include/product-photos/photo-missing_featured.jpg' % (environ['PAGEGEN_BASE_URL'])
+
+
 def create_pagegen_default_page(product_category):
 	''' Create overview page for product category '''
 
-	# Condider getting this from Pagegen environment..
 	pagegen_default_page = 'index.html'
+
+	if environ['PAGEGEN_ENVIRONMENT'] == 'prod':
+		url_file_extension = '';
+	else:
+		url_file_extension = '.html';
 
 	default_page_path = join(environ['PAGEGEN_SOURCE_DIR'], product_category['pagegen_directory_name'], pagegen_default_page)
 
-	rst = '''Title: %s
+	rst = '''##########################################
+%s
+##########################################
 
 %s
 
@@ -68,13 +80,13 @@ def create_pagegen_default_page(product_category):
 
 	product_boxes = ''
 	for handle, item in sorted(product_category['items'].items(), key=itemgetter(0)):
-		page_url = '%s/%s/%s' % (environ['PAGEGEN_BASE_URL'],  product_category['url_part'], '%s.html' % handle)
+		page_url = '%s/%s/%s' % (environ['PAGEGEN_BASE_URL'],  product_category['url_part'], '%s%s' % (handle, url_file_extension))
 
 		img_src = '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_SITE_DIR'], handle)
-		if isfile(img_src) == False:
-			img_src = '%s/include/product-photos/photo-missing_featured.jpg' % (environ['PAGEGEN_BASE_URL'])
 
-		link = '%s/%s/%s.html' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], handle)
+		img_url = get_image_url(img_src, handle)
+
+		link = '%s/%s/%s%s' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], handle, url_file_extension)
 
 		#product_boxes += '''\n  											<div class="4u 12u(mobile)">
 		#										<section class="simpleCart_shelfItem box">
@@ -90,12 +102,12 @@ def create_pagegen_default_page(product_category):
 
 		product_boxes += '''\n  											<div class="4u 12u(mobile)">
   												<section class="simpleCart_shelfItem box">
-  													<a href="#" class="image featured"><img src="%s" alt="%s" /></a>
+  													<a href="%s" class="image featured"><img src="%s" alt="%s" /></a>
   													<header>
   														<h3 class="item_name">%s</h3>
   													</header>
   												</section>
-  											</div>''' % (img_src, item['name'], item['name'])
+  											</div>''' % (page_url, img_url, item['name'], item['name'])
 
 
 	rst += '''
@@ -110,9 +122,6 @@ def create_pagegen_default_page(product_category):
   
   								<!-- Products -->
   									<section>
-  										<header class="major">
-  											<h2>Microgreens</h2>
-  										</header>
   										<div class="row">%s</div>
   									</section>
   							</div>
@@ -235,22 +244,28 @@ def cropped_images(handle):
 
 def create_pagegen_product_pages(page_path, product, handle):
 
+	img_src = '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_SITE_DIR'], handle)
+
+	img_url = get_image_url(img_src, handle)
+
 	rst = '''Title: %s
 Menu exclude: True
 Description: %s
 
-%s
-
 .. raw:: html
 
-  <img src="%s/include/product-photos/%s_featured.jpg" alt="%s" />
+  <h1>%s</h1>
+  
+  %s
+  
+  <img src="%s" alt="%s" />
 
 ''' % (
 		product['name'],
 		product['short_description'],
+		product['name'],
 		product['description'],
-		environ['PAGEGEN_BASE_URL'],
-		handle,
+		img_url,
 		handle
 	)
 

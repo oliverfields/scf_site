@@ -2,9 +2,11 @@ Title: Syre
 Menu exclude: True
 Description: 
 
-
-
 .. raw:: html
 
-  <img src="file:///home/oliver/Documents/Personal/projects/pagegen/scf_site/site/test/include/product-photos/syre_featured.jpg" alt="syre" />
+  <h1>Syre</h1>
+  
+  
+  
+  <img src="http://southcoastfarms.no/include/product-photos/syre_featured.jpg" alt="syre" />
 

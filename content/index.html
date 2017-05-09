@@ -7,7 +7,7 @@ import json
 import codecs
 
 
-def showcase_products(product_category):
+def showcase_products(product_category, url_file_extension):
 	# Make popular plants boxes
 
 	html = ''
@@ -17,7 +17,7 @@ def showcase_products(product_category):
 		if 'showcase' in item and item['showcase']:
 
 			img_src = '%s/include/product-photos/%s_featured.jpg' % (environ['PAGEGEN_BASE_URL'], handle)
-			link = '%s/%s/%s.html' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], handle)
+			link = '%s/%s/%s%s' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], handle, url_file_extension)
 
 			html += '''											<div class="4u 12u(mobile)">
 												<section class="box">
@@ -37,15 +37,20 @@ products_file_path = join(environ['PAGEGEN_SITE_DIR'], 'products.json')
 with codecs.open(products_file_path, 'r', encoding='utf-8') as products:
 	p = json.load(products)
 
-for key, product_category in p.iteritems():
-	showcase_html = showcase_products(product_category)
+if environ['PAGEGEN_ENVIRONMENT'] == 'prod':
+	url_file_extension = '';
+else:
+	url_file_extension = '.html';
 
+for key, product_category in p.iteritems():
+	showcase_html = showcase_products(product_category, url_file_extension)
 
 
 page = '''Menu exclude: true
-Template: homepage.tpl'''
+Template: homepage.tpl
+Title: Velkommen'''
 
-product_category_url = '%s/%s/index.html' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'])
+product_category_url = '%s/%s/index%s' % (environ['PAGEGEN_BASE_URL'], product_category['url_part'], url_file_extension)
 #print(product_category_url)
 
 page += '''
@@ -66,7 +71,7 @@ page += '''
 										<div class="row">%s</div>
 										<footer>
 											<ul class="actions">
-												<li class="centered"><a href="%s" class="button big">Hele produkt utvalget</a></li>
+												<li class="centered"><a href="%s" class="button big">Se alle microgreens</a></li>
 											</ul>
 										</footer>
 									</section>
@@ -76,6 +81,6 @@ page += '''
 					</div>
 				</div>
 
-''' % (showcase_html, product_category_url.encode('utf-8'))
+''' % (showcase_html, '%s/' % product_category['url_part'].encode('utf-8'))
 
 print(page)

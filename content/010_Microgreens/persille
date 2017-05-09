@@ -2,9 +2,11 @@ Title: Persille
 Menu exclude: True
 Description: 
 
-
-
 .. raw:: html
 
-  <img src="file:///home/oliver/Documents/Personal/projects/pagegen/scf_site/site/test/include/product-photos/persille_featured.jpg" alt="persille" />
+  <h1>Persille</h1>
+  
+  
+  
+  <img src="http://southcoastfarms.no/include/product-photos/photo-missing_featured.jpg" alt="persille" />
 

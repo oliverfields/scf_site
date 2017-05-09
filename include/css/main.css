@@ -1069,7 +1069,6 @@
 
 	body {
 		background: #252122;
-		background-image: url("images/bg02.png");
 		font-family: 'Source Sans Pro';
 		font-weight: 300;
 		color: #5d5d5d;
@@ -1657,7 +1656,7 @@
 /* Banner */
 
 	#banner {
-		background: #5FC963 url("file:///home/oliver/Documents/Personal/projects/pagegen/scf_site/site/test/include/images/pic01.jpg");
+		background: #5FC963 url("/include/images/pic01.jpg");
 		background-position: center center;
 		background-size: auto 100%;
 		background-repeat: no-repeat;
@@ -1691,7 +1690,7 @@
 
 	#main-wrapper {
 		position: relative;
-		background: #f7f7f7 url("images/bg02.png");
+		background: #f7f7f7;
 	}
 
 		#main-wrapper:before {
@@ -1707,12 +1706,12 @@
 		}
 
 		#main-wrapper .major h2 {
-			background: #f7f7f7 url("images/bg02.png");
+			background: #f7f7f7;
 		}
 
 	#footer-wrapper {
 		position: relative;
-		color: #858484;
+		color: #c5c4c4;
 	}
 
 		#footer-wrapper:before {
@@ -2407,7 +2406,6 @@
 				width: 275px;
 				z-index: 10002;
 				color: #858484;
-				background-image: url("images/bg02.png");
 				box-shadow: inset -3px 0px 5px 0px rgba(0, 0, 0, 0.35);
 			}
 
@@ -2741,4 +2739,51 @@
 	ul.bullet-list {
 		list-style: circle;
 		margin-left: 2em;
+	}
+
+	table.contact_info {
+		border: solid 1px #CCCCCC;
+		background-color: #FFFFFF;
+		width: 560px;
+		margin-left: 40px;
+		display: block;
+		float: right;
+	}
+
+	.contact_info th {
+		width: 20%;
+		font-weight: bold;
+		text-align: left;
+		padding: 1em;
+	}
+
+	.align-right {
+		float: right;
+		margin-left: 2em;
+	}
+
+	.align-left {
+		float: left;
+		margin-right: 2em;
+	}
+
+	.align-center {
+		float: center;
+	}
+
+	h1 {
+		font-size: 2.8em;
+		margin: 0 0 1.4em 0;
+	}
+
+	div#mc_embed_signup, div#mc_embed_signup label {
+		color: #c5c4c4;
+	}
+
+	div#mc_embed_signup input {
+		font-size: .8em;
+	}
+
+	div#mc_embed_signup input.button {
+		margin-top: .8em;
 	}
