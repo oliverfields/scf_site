@@ -138,6 +138,12 @@
 
 	@media screen and (max-width: 736px) {
 
+		#header h1 a img {
+			max-width: 96%;
+			height: auto !important;
+			margin-top: 1em;
+		}
+
 		.container.\31 25\25 {
 			width: 100%;
 			max-width: 125%;
@@ -2365,7 +2371,7 @@
 						font-weight: normal;
 						-webkit-font-smoothing: antialiased;
 						-moz-osx-font-smoothing: grayscale;
-						content: '\f0c9';
+						content: '=';
 						display: block;
 						position: absolute;
 						left: 10px;
@@ -2373,7 +2379,8 @@
 						width: 50px;
 						height: 40px;
 						line-height: 40px;
-						font-size: 18px;
+						font-size: 28px;
+						font-weight: bold;
 						color: #fff;
 						text-align: center;
 						background: rgba(150, 150, 150, 0.75);
